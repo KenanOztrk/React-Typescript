@@ -1,16 +1,15 @@
 import './App.css';
 import Konu1 from './konu1';
 import Konu2interface from './konu2interface';
+import Todo from './Todo/Todo';
 
 function App() {
 
   return (
     <div className="App">
-      1111111111
-      <Konu1/>
-      2222222222
-      <Konu2interface/>
-      3333333333
+      {/* <Konu1/> */}
+      {/* <Konu2interface/> */}
+      <Todo/>
     </div>
   );
 }
