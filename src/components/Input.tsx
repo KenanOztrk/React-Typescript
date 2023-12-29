@@ -1,10 +1,16 @@
 import React from 'react'
 
-const Input = () => {
+type IProps = {
+    todo: string,
+    setTodo: React.Dispatch<React.SetStateAction<string>>
+}
+
+const Input:React.FC<IProps> = ({todo, setTodo}) => {
   return (
     <div>
-        <input type="text" placeholder='textt'></input>
+        <input value={todo} onChange={e => setTodo(e.target.value)} type="text" placeholder='textt'></input>
         <button>Ekle</button>
+        {todo}
     </div>
   )
 }
